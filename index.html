@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<div class="game">
+  <div class="container-fluid text-center">
+    <div class="row gx-25">
+      <div class="col">
+         <div class="left">
+          <div class="players">
+            <label id="x" style="color: #00fe00;">X</label><label id="x_score">0</label>
+            </div>
+            <div class="players">
+            <label id="o" style="color: #ff6600;">O</label><label id="y_score">0</label>
+          </div>
+          <div class="players">
+          <label id="tiee" style="color: #44b4fe;">Tie</label><label id="tie">0</label>
+          </div>
+          <div class="players">
+          <button id="replayBtn">Play Again</button>
+          </div>
+         </div>
+      </div>
+      <div class="col">
+        <div id="cellContainer">
+            <div cellIndex="0" class="cell"></div>
+            <div cellIndex="1" class="cell"></div>
+            <div cellIndex="2" class="cell"></div>
+            <div cellIndex="3" class="cell"></div>
+            <div cellIndex="4" class="cell"></div>
+            <div cellIndex="5" class="cell"></div>
+            <div cellIndex="6" class="cell"></div>
+            <div cellIndex="7" class="cell"></div>
+            <div cellIndex="8" class="cell"></div>
+        </div>
+        <h2 id="statusText"></h2>
+      </div>
+      <div class="col">
+        <div class="right">
+          <div class="title">
+            <h1><span style="color: #00fe00;">Tic<br></span>
+              <span style="color: #ff6600;">&nbsp;&nbsp;Tac<br></span>
+              <span style="color: #44b4fe;">&nbsp;&nbsp;&nbsp;&nbsp;Toe</span></h1>
+          </div>
+        <div class="replay">
+          <button id="restartBtn">Start Over</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <script src="script.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Serif+Balinese&family=Playfair+Display:ital,wght@1,900&family=Playpen+Sans:wght@700&family=Potta+One&family=Roboto+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&family=Merriweather&family=Noto+Serif+Balinese&family=Playfair+Display:ital,wght@1,900&family=Playpen+Sans:wght@700&family=Potta+One&family=Roboto+Slab:wght@700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.game{
+    background: #1d1c1a;
+    background-image: url(tic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+.left{
+    font-size: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    height: 98vh;
+    width: 400px;
+    border: 1px solid aliceblue;
+}
+.cell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid aliceblue;
+    font-family: 'Merriweather';
+    line-height: 75px;
+    font-size: 100px;
+    cursor: pointer;
+}
+#statusText{
+    margin-top: 20px;
+    padding:20px 94px;
+    font-size: 100px;
+    border: 1px solid aliceblue;
+    color: aliceblue;
+    font-family: 'Merriweather';
+}
+.right{
+    font-family: 'Potta One';
+    height: 98vh;
+    width: 400px;
+    border: 1px solid aliceblue; 
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+.col h1{
+    font-size: 120px;
+    padding-right: 120px;
+}
+#restartBtn, #replayBtn{
+    border-radius: 5px;
+    border: 2px solid;
+    background-color: #fdb221;
+    padding: 12px 20px;
+    font-size: x-large;
+    font-family: Aref Ruqaa Ink;
+    font-weight: bolder;
+    color: #d33102;
+}
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-bottom: 20px;
+}
+.players{
+    font-family:  'Merriweather';
+    color: aliceblue;
+}
+#x, #o, #tiee{
+    width: 80px;
+    margin-right: 100px;
+    padding: 12px 20px;
+    font-size: 80px;
+}
